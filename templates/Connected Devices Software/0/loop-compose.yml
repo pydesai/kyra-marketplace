@@ -1,11 +1,12 @@
 ﻿.catalog:
   name: Connected Device Software
-  port: ttyS1
-  data bits: 8
-  baud rate: 19200
-  Parity: None
-  Station id: 1
-  Stop bits: 1
   version: latest
-  uuid: Connected Device Software-0
+  uuid: Connected Device Software-0  
+  questions:
+  - variable: PORT
+    port: ttyS1
+    description: 'communication port'
+    required: true
+    default: ttyUSB0
+    type: string
   
