@@ -4,9 +4,34 @@
   uuid: Connected Device Software-0  
   questions:
   - variable: PORT
-    port: ttyS1
     description: 'communication port'
     required: true
     default: ttyUSB0
     type: string
+  - variable: data bits
+    description: 'data bits'
+    required: true
+    default: 8
+    type: int
+  - variable: baud rate
+    description: 'baud rate'
+    required: true
+    default: 9600
+    type: int
+  - variable: parity
+    description: 'serial parity'
+    required: true
+    default: EVEN
+    type: string
+  - variable: station id
+    description: 'stationid of the client'
+    required: true
+    default: 1
+    type: int
+  - variable: stop bits
+    description: 'stop bits'
+    required: true
+    default: 1
+    type: int
+    
   
