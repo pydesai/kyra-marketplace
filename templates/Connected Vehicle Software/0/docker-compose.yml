@@ -4,7 +4,6 @@ services:
   icedge:
     command:
     - /bin/bash
-    container_name: icedge
     image: kyraatma/icedge:latest
     logging:
       driver: json-file
