@@ -2,4 +2,10 @@
   name: Connected Vehicle Software
   version: latest
   uuid: Connected Vehicle Software-0
+  questions:
+  - variable: logsize
+    description: 'log size in MB'
+    required: true
+    default: 50
+    type: int
   
