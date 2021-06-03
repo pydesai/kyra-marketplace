@@ -1,11 +1,12 @@
 version: "2"
 
 services:
-  connected vehicle software:
+  icedge:
+    command:
+    - /bin/bash
+    container_name: icedge
     image: kyraatma/icedge:latest
-    network_mode: host
-    service_name:        
-        logging:
-            options:
-                max-size: "50m"
-    
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
