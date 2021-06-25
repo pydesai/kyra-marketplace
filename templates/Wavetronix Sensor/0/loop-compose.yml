@@ -3,8 +3,9 @@
   version: latest
   uuid: Wavetronix Sensor
   questions:
-  - variable: volume
+  - variable: VOLUME
     description: 'volume'
     required: true
     default:/dev/radar
     type: string
+    
