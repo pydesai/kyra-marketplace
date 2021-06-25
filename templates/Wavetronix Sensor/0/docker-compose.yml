@@ -12,4 +12,5 @@ services:
     privileged: true
     volumes:
     - /dev/radar:/dev/radar
+    network_mode: bridge
     tty: true
