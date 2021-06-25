@@ -1,6 +1,17 @@
-﻿.catalog:
+.catalog:
   name: PCAP Exporter
   version: latest
   uuid: PCAP Exporter
-
-  
+  questions:
+  - variable: IFACE
+    description: 'interface'
+    label: 'Interface:'
+    required: true
+    default: eno1
+    type: string
+  - variable: PWD
+    description: 'present working directory'
+    label: 'path for the directory:'
+    required: true
+    default: /ftp-data
+    type: string
