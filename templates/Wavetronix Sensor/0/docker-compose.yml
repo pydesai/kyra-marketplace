@@ -10,6 +10,6 @@ services:
       options:
         max-size: 50m
     privileged: true
-    volume:
-    - '/dev/radar:/dev/radar'
+    volumes:
+    - /dev/radar:/dev/radar
     tty: true
