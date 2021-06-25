@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  ic_iot_sensor:
+    command:
+    - /bin/bash
+    image: kyraatma/ic_iot_sensor
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    privileged: true
+    volume:
+    - '/dev/radar:/dev/radar'
+    tty: true
