@@ -1,13 +1,11 @@
 version: "2"
 
 services:
-  icedge:
-    command:
-    - /bin/bash
-    image: kyraatma/icedge
-    logging:
-      driver: json-file
-      options:
-        max-size: 50m
+  ic_pcap_capture:
+    image: kyraatma/ic_pcap_capture
+    environment:
+      - IFACE=${IFACE}
+    volumes:
+      - ${PWD}:/data
     network_mode: host  
     tty: true
