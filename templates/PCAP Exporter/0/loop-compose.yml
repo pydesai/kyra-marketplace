@@ -17,7 +17,7 @@
     type: string
   - variable: FILTER
     description: 'ip address to filter'
-    label: 'ip address to filter
+    label: 'ip address to filter'
     required: true
     default: host 192.168.1.147
     type: string
