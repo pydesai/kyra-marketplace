@@ -22,8 +22,8 @@
     default: host 192.168.1.147
     type: string
   - variable: DURATION
-    description: 'duration
-    label: 'duration
+    description: 'duration'
+    label: 'duration'
     required: true
     default: 120
     type: int
