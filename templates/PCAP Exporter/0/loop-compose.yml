@@ -27,3 +27,9 @@
     required: true
     default: 120
     type: int
+  - variable: FILENAME
+    description: 'FILENAME'
+    label: 'duration'
+    required: false
+    default: dump.pcap
+    type: string 
