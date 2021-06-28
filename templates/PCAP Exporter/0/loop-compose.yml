@@ -15,3 +15,15 @@
     required: true
     default: /ftp-data
     type: string
+  - variable: FILTER
+    description: 'ip address to filter'
+    label: 'ip address to filter
+    required: true
+    default: host 192.168.1.147
+    type: string
+  - variable: DURATION
+    description: 'duration
+    label: 'duration
+    required: true
+    default: 120
+    type: int
