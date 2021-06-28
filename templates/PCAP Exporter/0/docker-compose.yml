@@ -5,6 +5,8 @@ services:
     image: kyraatma/ic_pcap_capture
     environment:
       - IFACE=${IFACE}
+      - FILTER=${FILTER}
+      - DURATION=${DURATION}
     volumes:
       - ${PWD}:/data
     network_mode: host  
