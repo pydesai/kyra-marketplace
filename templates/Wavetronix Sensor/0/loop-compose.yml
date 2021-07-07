@@ -2,4 +2,34 @@
   name: Wavetronix Sensor
   version: latest
   uuid: Wavetronix Sensor
-  
+  questions:
+  - variable: SERVER
+    description: 'server'
+    label: 'server:'
+    required: false
+    default: server
+    type: string
+  - variable: USERNAME
+    description: 'username'
+    label: 'username:'
+    required: false
+    default: username
+    type: string
+  - variable: PASSWORD
+    description: 'password'
+    label: 'password'
+    required: false
+    default: password
+    type: string
+  - variable: PORT
+    description: 'port'
+    label: 'port:'
+    required: false
+    default: 0
+    type: int
+  - variable: TOPIC
+    description: 'topic name'
+    label: 'topic'
+    required: false
+    default: kyraatma/ic_iot_sensor
+    type: string
