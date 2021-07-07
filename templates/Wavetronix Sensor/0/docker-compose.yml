@@ -5,12 +5,6 @@ services:
     command:
     - /bin/bash
     image: kyraatma/ic_iot_sensor
-    environment:
-      - SERVER=${SERVER}
-      - USERNAME=${USERNAME}
-      - PASSWORD=${PASSWORD}
-      - PORT=${PORT}
-      - TOPIC=${TOPIC}
     logging:
       driver: json-file
       options:
@@ -18,5 +12,11 @@ services:
     privileged: true
     volumes:
     - /dev/radar:/dev/radar
+    environment:
+      - SERVER=${SERVER}
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+      - PORT=${PORT}
+      - TOPIC=${TOPIC}
     network_mode: bridge
     tty: true
