@@ -5,13 +5,13 @@
   questions:
   - variable: RSU_URL_ARRAY
     description: 'RSU server url'
-    label: 'server url:'
+    label: 'server url'
     required: true
     default: [\"wss://10.233.8.148:3600/xfer\"] 
     type: string
   - variable: MQTT_URL
     description: 'MQTT server URL'
-    label: 'MQTT url:'
+    label: 'MQTT url'
     required: true
     default: mqtt://10.233.8.143:1883
     type: string
@@ -23,7 +23,7 @@
     type: int
   - variable: PORT
     description: 'PORT'
-    label: 'PORT:'
+    label: 'PORT'
     required: true
     default: 4001
     type: int
@@ -34,7 +34,7 @@
     default: decoder
     type: string
   - variable: LOG_LEVEL
-    description: 'LOG_LEVEL name'
+    description: 'LOG_LEVEL'
     label: 'LOG_LEVEL'
     required: false
     default: OFF
