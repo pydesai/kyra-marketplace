@@ -8,9 +8,10 @@ services:
     command:
     - /bin/bash
     image: kyraatma/siemens-rsu-initializer
-    logging:    
+    logging:
+      driver: json-file
       options:
-        max-size: max-size=1g,max-size=50m
+        max-size: $SIZE
     restart: always
     volumes:
     - /var/run/docker.sock:/tmp/docker.sock:ro
