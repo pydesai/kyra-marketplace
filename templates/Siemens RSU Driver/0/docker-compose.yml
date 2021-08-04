@@ -1,0 +1,24 @@
+version: "2"
+
+services:
+  siemens-rsu-initializer:
+    ports:
+    - 80:80
+    - 4001:4001
+    command:
+    - /bin/bash
+    image: kyraatma/siemens-rsu-initializer
+    logging:    
+      options:
+        max-size: max-size=1g,max-size=50m
+    restart: always
+    volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+    environment:
+      - RSU_URL_ARRAY=${RSU_URL_ARRAY}
+      - MQTT_URL=${MQTT_URL}
+      - RECONNECT_INTERVAL=${RECONNECT_INTERVAL}
+      - PORT=${PORT}
+      - MQTT_TOPIC=${MQTT_TOPIC}
+      - LOG_LEVEL=${LOG_LEVEL}
+    network_mode: host
