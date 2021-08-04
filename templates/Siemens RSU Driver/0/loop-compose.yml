@@ -40,12 +40,12 @@
     default: OFF
     type: string
     options:
-    - ALL
-    - TRACE
-    - DEBUG
-    - INFO
-    - WARN
-    - ERROR
-    - FATAL
-    - MARK
-    - OFF
+      - ALL
+      - TRACE
+      - DEBUG
+      - INFO
+      - WARN
+      - ERROR
+      - FATAL
+      - MARK
+      - OFF
