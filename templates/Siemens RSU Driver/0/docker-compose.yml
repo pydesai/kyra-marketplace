@@ -11,7 +11,7 @@ services:
     logging:
       driver: json-file
       options:
-        max-size: $SIZE
+        max-size: 50m
     restart: always
     volumes:
     - /var/run/docker.sock:/tmp/docker.sock:ro
