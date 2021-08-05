@@ -7,7 +7,7 @@
     description: 'RSU server url'
     label: 'server url'
     required: true
-    default: =[\"wss://10.233.8.148:3600/xfer\"] 
+    default: [\"wss://10.233.8.148:3600/xfer\"] 
     type: string
   - variable: MQTT_URL
     description: 'MQTT server URL'
