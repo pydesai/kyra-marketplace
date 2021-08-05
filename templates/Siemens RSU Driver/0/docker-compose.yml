@@ -3,7 +3,6 @@ version: "2"
 services:
   siemens-rsu-initializer:
     ports:
-    - 80:80
     - 4001:4001
     command:
     - /bin/bash
