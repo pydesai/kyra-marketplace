@@ -49,9 +49,3 @@
       - FATAL
       - MARK
       - OFF
-  - variable: SIZE
-    description: 'log size'
-    label: 'log size'
-    required: false
-    default: 50m
-    type: string
