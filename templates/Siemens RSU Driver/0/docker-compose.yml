@@ -21,3 +21,4 @@ services:
       - MQTT_TOPIC=${MQTT_TOPIC}
       - LOG_LEVEL=${LOG_LEVEL}
     network_mode: host
+    tty: true
