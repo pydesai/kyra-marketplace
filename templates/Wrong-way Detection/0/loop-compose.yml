@@ -1,0 +1,29 @@
+﻿.catalog:
+  name: Wrong-way Detection
+  version: latest
+  uuid: Wrong-way Detection
+  questions:
+  - variable: SERVER
+    description: 'server'
+    label: 'server:'
+    required: false
+    default: server
+    type: string
+  - variable: USERNAME
+    description: 'username'
+    label: 'username:'
+    required: false
+    default: username
+    type: string
+  - variable: PASSWORD
+    description: 'password'
+    label: 'password'
+    required: false
+    default: password
+    type: string
+  - variable: PORT
+    description: 'port'
+    label: 'port:'
+    required: false
+    default: 0
+    type: int

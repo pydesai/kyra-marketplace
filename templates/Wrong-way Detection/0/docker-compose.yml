@@ -1,0 +1,20 @@
+version: "2"
+
+services:
+  ic_iot_wrongway:
+    command:
+    - /bin/bash
+    image: kyraatma/ic_iot_wrongway
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    volumes:
+    - /dev/radar:/dev/radar
+    environment:
+      - SERVER=${SERVER}
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+      - PORT=${PORT}
+    network_mode: host
+    tty: true
