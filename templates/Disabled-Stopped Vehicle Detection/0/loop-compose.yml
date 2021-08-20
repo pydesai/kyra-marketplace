@@ -7,23 +7,23 @@
     description: 'server'
     label: 'server:'
     required: false
-    default: server
+    default: 
     type: string
   - variable: USERNAME
     description: 'username'
     label: 'username:'
     required: false
-    default: username
+    default: 
     type: string
   - variable: PASSWORD
     description: 'password'
     label: 'password'
     required: false
-    default: password
+    default: 
     type: string
   - variable: PORT
     description: 'port'
     label: 'port:'
     required: false
-    default: 0
+    default: 
     type: int
