@@ -1,0 +1,18 @@
+version: "2"
+
+services:
+  ic_iot_stopped:
+    command:
+    - /bin/bash
+    image: kyraatma/ic_iot_stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    environment:
+      - SERVER=${SERVER}
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+      - PORT=${PORT}
+    network_mode: host
+    tty: true
